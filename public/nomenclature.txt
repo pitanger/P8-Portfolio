@@ -1,0 +1,5 @@
+Couleurs :
+    Bleu clair : #2D8F9F
+    Bleu foncé : #2F3E47
+
+    Presque noir : #323232

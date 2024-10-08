@@ -1,0 +1,393 @@
+.lien-router {
+    text-decoration: none;
+    color: inherit;
+}
+
+.lien-router:visited {
+    color: inherit;
+}
+  
+.lien-router:hover {
+    text-decoration: none;
+}
+
+.nav {
+    padding: 20px 0 0 20px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.nav__main {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__main :hover {
+    color: #323232;
+}
+
+.nav__icon {
+    font-size: 30px;
+    color: #2d8f9f;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav__icon--cms:hover {
+    transform: rotate(360deg);
+    cursor: help;
+}
+
+.nav__tooltip {
+    position: absolute;
+    background-color: #323232;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0.9;
+    transform: translate(-50%, 30px);
+    z-index: 10;
+}
+
+
+.current-date {
+    display: flex;
+    justify-content: space-around;
+    width:80%;
+    gap: 10px;
+    text-transform: capitalize;
+}
+
+.nav__date {
+    color: #323232;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    transform: scaleY(1.2);
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+    width: 40%;
+}
+
+main {
+    display:flex;
+    justify-content: space-between;
+}
+
+.left, .right {
+    display: flex;
+    width:40%;
+    flex-direction: column;
+}
+
+.Bienvenue > div {
+    opacity: 50%;
+}
+
+.box {
+    border: 1px solid #323232;
+    margin: 10px;
+    font-family: sans-serif;
+    padding:10px;
+    font-weight: 700;
+    font-size: 35px;
+    display: flex;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.portfolio {
+    font-family: sans-serif;
+    padding:10px;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.portfolio, .competences, .expetdiplomes, .competences__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.left__circles {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.hide {
+    justify-self: end;
+    align-self: center;
+}
+
+.hide > .Circle > div {
+    background-color: #323232;
+}
+
+.reseaux {
+    display: flex;
+    flex-direction: row;
+}
+
+.age {
+    margin-top:10%;
+}
+
+p {
+    margin:15px;
+    padding:0
+}
+
+.nom {
+    margin: 30px 0 40px 0
+}
+
+.reseaux__youtube {
+    width: 65%;
+    border: 0;
+}
+
+.reseaux__youtube .box {
+    border: 0;
+    border-radius: 30px;
+}
+
+.reseaux__youtube svg {
+    position: relative;
+    top: 0.25em;
+}
+
+.reseaux__autres {
+    width: 35%;
+}
+
+.reseaux__autres > div {
+    height: 40%;
+}
+
+.reseaux__autres--linkedin {
+    width:100%;
+    background-color: #007BB6;
+    margin: 8px 0 8px 0;
+}
+
+.Background {
+    position: fixed;
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 50%;
+}
+
+.Boximage {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Partie modale */
+
+.singleboxmodale {
+position: relative;
+overflow: hidden;
+opacity: 0;
+transition: opacity 0.5s ease;
+}
+
+.singleboxmodale.fade-in {
+opacity: 1;
+}
+
+.singleboxmodale.fade-out {
+opacity: 0;
+}
+
+.singleboxmodale .overlay {
+opacity: 0;
+transition: opacity 0.5s ease;
+}
+
+.singleboxmodale .title {
+transition: opacity 0.5s ease;
+}
+
+.site-content.visible {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  pointer-events: auto;
+}
+
+.site-content.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+
+/* Page traduction */
+
+.main-traduction {
+    display:flex;
+    flex-direction: column;
+}
+
+.descri-trad {
+    width:100%;
+    margin-top:100px;
+    font-size: 60px;
+    padding-right:20px;
+    color: #323232;
+    text-align: justify;
+}
+
+.lien-roboto {
+    text-decoration: none;
+    font-weight: 900;
+    color: #005Da4;
+    border: 3px solid #005DA4;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.collapses-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px; 
+    gap: 2%;
+    width:100%
+}
+
+.collapse {
+    width: 49%;
+    background-color: #323232;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.collapse-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #444444;
+    border-radius: 5px;
+}
+
+.collapse-content.open {
+    max-height: 1000px;
+}
+
+.project-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    cursor: pointer;
+    background-color: #4a4a4a;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.collapses-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: flex-start;
+
+}
+
+.project-text, .project-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.project-class-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-class-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-self: flex-end;
+}
+
+.project-text {
+    padding: 10px;
+    color: white;
+}
+
+.project-text p {
+    margin: 0;
+    text-align: center;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Box Experience */
+
+.boxperience {
+    transition: width 0.5s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+@keyframes rotateIcon {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .collapses-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .collapse {
+        width: 90%;
+    }
+
+    .project-item {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .project-text, .project-image {
+        width: 100%;
+    }
+}

@@ -1,0 +1,67 @@
+[
+    {
+    "index": "1",
+    "title": "Projet 1 Booki",
+    "description": "Projet de développement Front-end HTML et CSS pour un site d'hébergement/location",
+    "imagepath": "../images/images-portfolio/Projet-2-Booki.png",
+    "githublink": "https://github.com/pitanger/Projet-2-Booki",
+    "couleur": "#0065fc",
+    "problem": "Ce projet demandait de comprendre les enjeux d'un site développé avec le responsive design en tête et d'utiliser des valeurs en pourcentages à bon escient.",
+    "skills": "Apprentissage des notions HTML et CSS de base importantes telles que les flexbox, apprentissage du responsive design et de la validation W3C"
+    },
+
+    {
+    "index": "2",
+    "title": "Projet 2 Sophie Bluel",
+    "description": "Projet de développement Front-end HTML, CSS et JS pour un site d'artchitecte",
+    "imagepath": "../images/images-portfolio/Projet-3-Sophie-Bluel.png",
+    "githublink": "https://github.com/pitanger/Projet-3-Sophie-Bluel",
+    "couleur": "#1d6154",
+    "problem": "Ce projet demandait de comprendre les logiques des API, des fonctions async, des token ainsi que le mode de fonctionnement d'une modale.",
+    "skills": "Apprentissage du Javascript et de différentes fonctions (Async, boucles, OnClick...), du fonctionnement des API avec les fonctions async, de logiciels de gestion d'API (Postman) et des créations et gestions de modales."
+    },
+
+    {
+    "index": "3",
+    "title": "Projet 3 Nina Carducci",
+    "description": "Projet de debuggage de code et d'amélioration de référencement SEO pour le site d'une photographe",
+    "imagepath": "../images/images-portfolio/Projet-4-Nina-Carducci.png",
+    "githublink": "https://github.com/pitanger/Projet-4-Nina-Carducci",
+    "couleur": "#e5975f",
+    "problem": "Ce projet demandait de comprendre le fonctionnement de la console de debuggage et des Breakpoints d'event listeners, la partie amélioration du SEO a demandé une étude particulière de la documentation des Google Rich Results.",
+    "skills": "Apprentissage de plusieurs outils pour aider au référencement naturel (WAVE, Lighthouse, Google Rich Results, Code Minifying), de l'importance de l'optimisation de la taille et du format d'images, des Header tags et des résultats enrichis grâce au JSON-LD. Apprentissage de l'utilisation du console debugger."
+    },
+
+    {
+    "index": "4",
+    "title": "Projet 4 Kasa",
+    "description": "Projet de développement Front-end ReactJS pour un site d'immobilier",
+    "imagepath": "../images/images-portfolio/Projet-5-Kasa.png",
+    "githublink": "https://github.com/pitanger/Projet-5-Kasa",
+    "couleur": "#ff6060",
+    "problem": "Ce projet demandait d'utiliser la logique des composants réutilisables afin d'obtenir un site dynamique et facilement modifiable. React Router n'étant pas installé par défaut ce projet m'a aussi fait me renseigner sur la logique des Routes.",
+    "skills": "Apprentissage de ReactJS et de la logique des composants réutilisables sur différentes pages en plus de l'utilisation des Hooks et des Props ainsi que de React Router."
+    },
+
+    {
+    "index": "5",
+    "title": "Projet 5 Vieux Grimoire",
+    "description": "Projet de développement Back-end Node.JS pour un site communautaire de notation de livres",
+    "imagepath": "../images/images-portfolio/Projet-6-Vieux-Grimoire.png",
+    "githublink": "https://github.com/pitanger/Projet-6-Vieux-Grimoire",
+    "couleur": "#b99056",
+    "problem": "Ce projet demandait d'avoir une arborescene parfaitement organisée et de s'assurer d'avoir toutes les dépendances liées à NodeJS ainsi qu'aux différentes dépendances nécessaires à la facilitation d'un backend fonctionnel (multer, Jsonwebtoken, Bcrypt...)",
+    "skills": "Apprentissage du backend en NodeJS et de l'établissement de routes API CRUD (POST, GET, PUT, DELETE) et de routes d'authentification sécurisées grâce à Bcrypt et au hachage de tokens."
+    },
+
+    {
+    "index": "6",
+    "title": "Projet 6 Qwenta",
+    "description": "Projet de gestion de projet en méthode Agile pour un site de création de menus",
+    "imagepath": "../images/images-portfolio/Projet-7-Qwenta.png",
+    "githublink": "https://github.com/pitanger/Projet-7-Qwenta",
+    "couleur": "#f6eade",
+    "problem": "Apprentissage des notions HTML et CSS de base importantes telles que les flexbox, apprentissage du responsive design et de la validation W3C",
+    "skills": "Apprentissage des notions HTML et CSS de base importantes telles que les flexbox, apprentissage du responsive design et de la validation W3C"
+    }
+]

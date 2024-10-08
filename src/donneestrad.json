@@ -1,0 +1,73 @@
+[
+    {
+    "index": "1",
+    "title": "Days of Doom",
+    "developper": "Atari",
+    "travail": "Traduction",
+    "description": "Un roguelike stratégique post-apocalyptique en tour par tour",
+    "link": "https://atari.com/products/days-of-doom"
+    },
+
+    {
+    "index": "2",
+    "title": "Contain",
+    "developper": "Singin Giant",
+    "travail": "Traduction",
+    "description": "Un FPS tactique d'horreur coopératif",
+    "link": "https://containgame.com/"
+    },
+
+    {
+    "index": "3",
+    "title": "Wisper",
+    "developper": "Aechmea Studios",
+    "travail": "Traduction",
+    "description": "Un jeu d'aventure fantasy",
+    "link": "https://www.senscritique.com/jeuvideo/wisper/58695544"
+    },
+
+    {
+    "index": "4",
+    "title": "Gemstone Legends",
+    "developper": "GameDesire Group",
+    "travail": "Traduction",
+    "description": "Un match 3 gacha fantasy",
+    "link": "https://play.google.com/store/apps/details?id=com.gemstone.legends.rpg.adventure.game&hl=fr"
+    },
+
+    {
+    "index": "5",
+    "title": "Super Cat Tales: Paws",
+    "developper": "NEUTRONIZED",
+    "travail": "Relecture",
+    "description": "Un plateformer en 2D dans lequel vous incarnez un chat",
+    "link": "https://play.google.com/store/apps/details?id=com.neutronized.supercattalespaws&hl=fr"
+    },
+
+    {
+    "index": "6",
+    "title": "Royal Merge!",
+    "developper": "BoomPick Games Sp. z o.o",
+    "travail": "Relecture",
+    "description": "Un jeu de gestion de royaume",
+    "link": "https://play.google.com/store/apps/details?id=com.cherrypickgames.royalmerge&hl=en"
+    },
+
+    {
+    "index": "7",
+    "title": "Castle War: Idle Island",
+    "developper": "Plug in Digital",
+    "travail": "Relecture",
+    "description": "UN jeu entre la gestion de royaume et des parties de destruction d'objets en 2D",
+    "link": "https://play.google.com/store/apps/details?id=com.pid.castlewar&hl=en_US"
+    },
+
+    {
+    "index": "8",
+    "title": "The Invincible",
+    "developper": "Starward Industries",
+    "travail": "Relecture",
+    "description": "Une jeu d'aventure et d'exploration centré sur sa narration",
+    "link": "https://store.steampowered.com/app/731040/The_Invincible/"
+    }
+]
