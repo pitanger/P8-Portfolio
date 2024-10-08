@@ -1,7 +1,7 @@
 [
     {
     "index": "1",
-    "title": "Projet 1 Booki",
+    "title": "Booki",
     "description": "Projet de développement Front-end HTML et CSS pour un site d'hébergement/location",
     "imagepath": "../images/images-portfolio/Projet-2-Booki.png",
     "githublink": "https://github.com/pitanger/Projet-2-Booki",
@@ -12,7 +12,7 @@
 
     {
     "index": "2",
-    "title": "Projet 2 Sophie Bluel",
+    "title": "Sophie Bluel",
     "description": "Projet de développement Front-end HTML, CSS et JS pour un site d'artchitecte",
     "imagepath": "../images/images-portfolio/Projet-3-Sophie-Bluel.png",
     "githublink": "https://github.com/pitanger/Projet-3-Sophie-Bluel",
@@ -23,7 +23,7 @@
 
     {
     "index": "3",
-    "title": "Projet 3 Nina Carducci",
+    "title": "Nina Carducci",
     "description": "Projet de debuggage de code et d'amélioration de référencement SEO pour le site d'une photographe",
     "imagepath": "../images/images-portfolio/Projet-4-Nina-Carducci.png",
     "githublink": "https://github.com/pitanger/Projet-4-Nina-Carducci",
@@ -34,7 +34,7 @@
 
     {
     "index": "4",
-    "title": "Projet 4 Kasa",
+    "title": "Kasa",
     "description": "Projet de développement Front-end ReactJS pour un site d'immobilier",
     "imagepath": "../images/images-portfolio/Projet-5-Kasa.png",
     "githublink": "https://github.com/pitanger/Projet-5-Kasa",
@@ -45,7 +45,7 @@
 
     {
     "index": "5",
-    "title": "Projet 5 Vieux Grimoire",
+    "title": "Mon Vieux Grimoire",
     "description": "Projet de développement Back-end Node.JS pour un site communautaire de notation de livres",
     "imagepath": "../images/images-portfolio/Projet-6-Vieux-Grimoire.png",
     "githublink": "https://github.com/pitanger/Projet-6-Vieux-Grimoire",
@@ -56,7 +56,7 @@
 
     {
     "index": "6",
-    "title": "Projet 6 Qwenta",
+    "title": "Qwenta",
     "description": "Projet de gestion de projet en méthode Agile pour un site de création de menus",
     "imagepath": "../images/images-portfolio/Projet-7-Qwenta.png",
     "githublink": "https://github.com/pitanger/Projet-7-Qwenta",
