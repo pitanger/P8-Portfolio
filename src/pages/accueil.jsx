@@ -5,7 +5,6 @@ import Box from '../composants/box';
 import Circle from '../composants/circle';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowsRotate } from '@fortawesome/free-solid-svg-icons';
-import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import Background from '../composants/background';
 import Reseaux from "../composants/reseaux";
 import backgroundgithub from "../images/github.png";

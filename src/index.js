@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css';
-import './index.scss';
 
 import Accueil from './pages/accueil';
 import Traduction from './pages/traduction';
