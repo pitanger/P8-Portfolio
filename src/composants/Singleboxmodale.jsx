@@ -4,7 +4,7 @@ function Singleboxmodale({ title, description, imagepath, githublink, animationC
     const [isHovered, setIsHovered] = useState(false);
 
     const boxStyle = {
-        width: "280px",
+        width: "260px",
         height: "380px",
         position: "relative",
         cursor: "pointer",
@@ -39,6 +39,7 @@ function Singleboxmodale({ title, description, imagepath, githublink, animationC
         textAlign: "center",
         transition: "opacity 0.5s ease",
     };
+    
 
     const overlayStyle = {
         position: "absolute",
@@ -53,18 +54,21 @@ function Singleboxmodale({ title, description, imagepath, githublink, animationC
         alignItems: "center",
         textAlign: "center",
         transition: "opacity 0.5s ease",
-        fontSize: "25px",
+        fontSize: "1.2rem",
         color: "white",
     };
 
     return (
-        <div
-            className={`singleboxmodale ${animationClass}`}
-            style={{ ...boxStyle, transitionDelay: `${index * 0.1}s`, opacity: animationClass === "fade-in" ? 1 : 0 }}
-            onMouseEnter={() => { setIsHovered(true); onHover(); }}
-            onMouseLeave={() => { setIsHovered(false); onMouseLeave(); }}
-            onClick={() => window.open(githublink, "_blank")}
-        >
+            <div
+                className={`singleboxmodale ${animationClass}`}
+                style={{ ...boxStyle, transitionDelay: `${index * 0.1}s`, opacity: animationClass === "fade-in" ? 1 : 0 }}
+                onMouseEnter={() => { setIsHovered(true); onHover(); }}
+                onMouseLeave={() => { setIsHovered(false); onMouseLeave(); }}
+                onClick={(e) => {
+                    e.stopPropagation();
+                    window.open(githublink, "_blank");
+                }} >
+
             <div style={upperBoxStyle}></div>
 
             <div style={lowerBoxStyle}>

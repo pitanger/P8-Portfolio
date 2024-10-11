@@ -50,16 +50,16 @@ const TradCollapse = () => {
         <h2>Traduction</h2>
         <div className={`collapse-content ${openTraduction ? 'open' : ''}`}>
           <div className="project-class-left" style={{ width: '70%' }}>
-            <p style={{ fontSize: '30px', width:'30%' }}>Nom</p>
-            <p style={{ fontSize: '25px', width:'30%' }}>Développeur</p>
-            <p style={{ fontSize: '20px', width:'40%' }}>Description</p>
+            <p style={{ fontSize: '1.4rem', width:'30%' }}>Nom</p>
+            <p style={{ fontSize: '1.3rem', width:'30%' }}>Dev</p>
+            <p style={{ fontSize: '1.2rem', width:'40%' }}>Description</p>
           </div>
           {traductionData.map((item) => (
             <div key={item.index} className="project-item">
               <div className="project-text" style={{ width: '70%' }}>
-                <p style={{ fontSize: '30px', width:'30%' }}>{item.title}</p>
-                <p style={{ fontSize: '25px', width:'30%' }}>{item.developper}</p>
-                <p style={{ fontSize: '20px', width:'40%' }}>{item.description}</p>
+                <p style={{ fontSize: '1.2rem', width:'30%' }}>{item.title}</p>
+                <p style={{ fontSize: '1.1rem', width:'30%' }}>{item.developper}</p>
+                <p style={{ fontSize: '1rem', width:'40%' }}>{item.description}</p>
               </div>
               <div className="project-image" style={{ width: '30%' }}>
                 <img 
@@ -78,9 +78,9 @@ const TradCollapse = () => {
         <h2>Relecture</h2>
         <div className={`collapse-content ${openRelecture ? 'open' : ''}`}>
           <div className="project-class-right" style={{ width: '70%' }}>
-            <p style={{ fontSize: '30px', width:'30%' }}>Nom</p>
-            <p style={{ fontSize: '25px', width:'30%' }}>Développeur</p>
-            <p style={{ fontSize: '20px', width:'40%' }}>Description</p>
+            <p style={{ fontSize: '1.4rem', width:'30%' }}>Nom</p>
+            <p style={{ fontSize: '1.3rem', width:'30%' }}>Dev</p>
+            <p style={{ fontSize: '1.2rem', width:'40%' }}>Description</p>
           </div>
           {relectureData.map((item) => (
             <div key={item.index} className="project-item">
@@ -93,9 +93,9 @@ const TradCollapse = () => {
                 />
               </div>
               <div className="project-text" style={{ width: '70%' }}>
-                <p style={{ fontSize: '30px', width:'30%' }}>{item.title}</p>
-                <p style={{ fontSize: '25px', width:'30%' }}>{item.developper}</p>
-                <p style={{ fontSize: '20px', width:'40%' }}>{item.description}</p>
+                <p style={{ fontSize: '1.2rem', width:'30%' }}>{item.title}</p>
+                <p style={{ fontSize: '1.1rem', width:'30%' }}>{item.developper}</p>
+                <p style={{ fontSize: '1rem', width:'40%' }}>{item.description}</p>
               </div>
             </div>
           ))}

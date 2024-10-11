@@ -1,26 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const textstyle = {
-    fontSize: "30px",
+    fontSize: "1.35rem",
     transform: "scaleY(1.4)",
     color: "#323232"
 };
 
 const soustextstyle = {
-    fontSize: "15px",
+    fontSize: "0.7rem",
     transform: "scaleY(1.4)",
     color: "#323232"
 };
 
 const soustextstyleWhite = {
-    fontSize: "15px",
+    fontSize: "0.7rem",
     transform: "scaleY(1.4)",
     color: "white"
 };
 
-function Boxperience({ text, soustexte, Icone, isWhiteText = false }) {
+function Boxperience({ text, soustexte, Icone, isWhiteText = false, largeurNonExpanded = 200 }) {
     const [isExpanded, setIsExpanded] = useState(false);
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia("(max-width: 768px)");
+        const handleMediaQueryChange = (e) => {
+            setIsSmallScreen(e.matches);
+        };
+        
+        handleMediaQueryChange(mediaQuery);
+
+        mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+        return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    }, []);
 
     const handleClick = () => {
         setIsExpanded(!isExpanded);
@@ -29,33 +43,36 @@ function Boxperience({ text, soustexte, Icone, isWhiteText = false }) {
     const appliedSoustextStyle = isWhiteText ? soustextstyleWhite : soustextstyle;
 
     const boxStyle = {
-        height: "hauteur",
-        width: isExpanded ? "600px" : "200px",
+        height: "150px",
+        width: isSmallScreen
+            ? isExpanded ? "92%" : "50%"
+            : isExpanded 
+                ? `${largeurNonExpanded * 1.86}px`
+                : `${largeurNonExpanded}px`,
+        margin: "3px",
         backgroundColor: "white",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
         cursor: "pointer",
         transition: "width 0.5s ease-in-out",
-        overflow: "hidden",
     };
 
     const paragraphStyle = {
-        fontSize: "10px",
-        margin: "5px 0",
-        textAlign: "center",
+        fontSize: "0.75rem",
     };
 
     return (
-        <div className="box boxperience" style={boxStyle} onClick={handleClick}>
+        <div className="box" id="experience" style={boxStyle} onClick={handleClick}>
             {Icone && <FontAwesomeIcon icon={Icone} size="3x" style={{ color: "white" }} />}
-            <p className="box__text" style={textstyle}>{text}</p>
-            <p className="box__soustexte" style={appliedSoustextStyle}>{soustexte}</p>
+            {!isExpanded && (
+                <>
+                    <p className="box__text" style={textstyle}>{text}</p>
+                    <p className="box__soustexte" style={appliedSoustextStyle}>{soustexte}</p>
+                </>
+            )}
             {isExpanded && (
                 <>
-                    <p style={paragraphStyle}>Premier paragraphe</p>
-                    <p style={paragraphStyle}>Deuxième paragraphe</p>
+                    <p style={paragraphStyle}>- Enseignant d'anglais en école privé (3 ans)</p>
+                    <p style={paragraphStyle}>- Traducteur / Relecteur pour ROBOTO Global (2 ans)</p>
+                    <p style={paragraphStyle}>- Optimisation de la SEO pour 3 sites différents (6 mois)</p>
                 </>
             )}
         </div>

@@ -10,7 +10,7 @@ import Projet4Image from '../images/images-portfolio/Projet-5-Kasa.png';
 import Projet5Image from '../images/images-portfolio/Projet-6-Vieux-Grimoire.png';
 import Projet6Image from '../images/images-portfolio/Projet-7-Qwenta.png';
 
-function Boxmodale ({ text, soustexte, hauteur = "auto", largeur = "auto", Couleurfond = "white" }) {
+function Boxmodale({ text, soustexte, hauteur = "auto", largeur = "auto", Couleurfond = "white" }) {
     const [hoveredProject, setHoveredProject] = useState(null);
     const [isCollapsed, setIsCollapsed] = useState(false);
     const [startAnimation, setStartAnimation] = useState(false);
@@ -28,100 +28,45 @@ function Boxmodale ({ text, soustexte, hauteur = "auto", largeur = "auto", Coule
     }, [isCollapsed]);
 
     const handleClose = (e) => {
-        e.stopPropagation();
-        setIsCollapsed(false);
-    };
-
-    const boxStyle = {
-        height: hauteur,
-        width: largeur,
-        backgroundColor: Couleurfond,
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        cursor: "pointer",
-        border: "1px solid #000",
-        transition: "height 0.5s ease, width 0.5s ease",
-        position: "relative",
-        zIndex: isCollapsed ? 10 : 1,
-    };
-
-    const textstyle = {
-        fontSize: "30px",
-        color: "#323232",
-        transform: "scaleY(1.4)",
-    };
-
-    const soustextstyle = {
-        fontSize: "15px",
-        color: "#323232",
-        transform: "scaleY(1.4)",
-    };
-
-    const overlayStyle = {
-        position: "fixed",
-        top: 0,
-        left: 0,
-        width: "100vw",
-        height: "100vh",
-        backgroundColor: "rgba(0, 0, 0, 0.5)",
-        zIndex: 9,
-        display: isCollapsed ? "block" : "none", 
-    };
-
-    const collapseContainerStyle = {
-        display: isCollapsed ? "grid" : "none",
-        gridTemplateColumns: "repeat(3, 280px)",
-        gridTemplateRows: "repeat(2, 380px)",
-        gap: "10px",
-        position: "fixed",
-        top: "50%",
-        left: "50%",
-        transform: "translate(-10%, -50%)",
-        zIndex: 10,
-    };
-
-    const closeButtonStyle = {
-        position: "absolute",
-        top: "-60px",
-        right: "-60px",
-        cursor: "pointer",
-        zIndex: 11,
+        if (e.target.classList.contains('modal-container')) {
+            setIsCollapsed(false);
+        }
     };
 
     const images = [Projet1Image, Projet2Image, Projet3Image, Projet4Image, Projet5Image, Projet6Image];
 
-    const infoStyle = {
-        position: "absolute",
-        transform: "translate(-225%, -90%)",
-        width: "300px",
-        padding: "10px",
-        fontSize: "15px",
-        color: "#323232",
-        backgroundColor: "rgba(255, 255, 255, 0.9)",
-        display: hoveredProject ? "block" : "none",
-        zIndex: 20
-    };
-
     return (
         <div>
-            <div style={boxStyle} onClick={toggleCollapse}>
-                <p style={textstyle}>{text}</p>
-                <p style={soustextstyle}>{soustexte}</p>
+            <div
+                className="box"
+                style={{
+                    height: hauteur,
+                    width: largeur,
+                    backgroundColor: Couleurfond,
+                    zIndex: isCollapsed ? 10 : 1,
+                }}
+                onClick={toggleCollapse}
+            >
+                <p className="text-style">{text}</p>
+                <p className="sous-text-style">{soustexte}</p>
             </div>
 
-            <div style={overlayStyle} onClick={handleClose}></div>
-
             {isCollapsed && (
-                <div style={{ display: "flex", alignItems: "center", position: "relative" }}>
+                <div className="modal-overlay" onClick={() => setIsCollapsed(false)}>
                     {hoveredProject && (
-                        <div classname="description-projet" style={infoStyle}>
-                            <p><strong></strong> {hoveredProject.problem}</p>
-                            <p><strong></strong> {hoveredProject.skills}</p>
-                        </div>
-                    )}
+                        <>
+                            {/* Top box for 'problem' */}
+                            <div className="description-projet-top">
+                                <p><strong>{hoveredProject.problem}</strong></p>
+                            </div>
 
-                    <div style={collapseContainerStyle}>
+                            {/* Bottom box for 'skills' */}
+                            <div className="description-projet-bottom">
+                                <p>{hoveredProject.skills}</p>
+                            </div>
+                        </>
+                    )}
+                    <div className="modal-container" onClick={handleClose}>
                         {donnees.map((item, index) => (
                             <Singleboxmodale
                                 key={index}
@@ -136,8 +81,8 @@ function Boxmodale ({ text, soustexte, hauteur = "auto", largeur = "auto", Coule
                                 onMouseLeave={() => setHoveredProject(null)}
                             />
                         ))}
-                        <div style={closeButtonStyle} onClick={handleClose}>
-                            <FontAwesomeIcon icon={faX} size="2x" style={{ color: "white" }} />
+                        <div className="modal-close-button" onClick={() => setIsCollapsed(false)}>
+                            <FontAwesomeIcon icon={faX} size="lg" style={{ color: "white" }} />
                         </div>
                     </div>
                 </div>
