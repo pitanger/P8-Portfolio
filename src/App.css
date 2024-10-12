@@ -115,7 +115,7 @@ main {
     border: 1px solid #323232;
     font-family: sans-serif;
     flex-direction: column;
-    padding: 10px;
+    padding: 7px;
     margin: 1%;
     font-weight: 700;
     display: flex;
@@ -129,6 +129,7 @@ main {
 
 .box > p {
     padding-left: 4%;
+    line-height: 92%;
 }
 
 .portfolio, .competences, .expetdiplomes, .competences__main, .competences__intro {
