@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/P8-Portfolio/static/css/main.4a7119a3.css",
+    "main.css": "/P8-Portfolio/static/css/main.ea681e64.css",
     "main.js": "/P8-Portfolio/static/js/main.2e5bf842.js",
     "static/js/453.1407b060.chunk.js": "/P8-Portfolio/static/js/453.1407b060.chunk.js",
     "static/media/Projet-5-Kasa.png": "/P8-Portfolio/static/media/Projet-5-Kasa.b43aabad9ec1fc3f5035.png",
@@ -21,12 +21,12 @@
     "static/media/Royal-Merge.webp": "/P8-Portfolio/static/media/Royal-Merge.067321fd4ffa6c3652f1.webp",
     "static/media/github.png": "/P8-Portfolio/static/media/github.fc816db5cff6efebaae5.png",
     "index.html": "/P8-Portfolio/index.html",
-    "main.4a7119a3.css.map": "/P8-Portfolio/static/css/main.4a7119a3.css.map",
+    "main.ea681e64.css.map": "/P8-Portfolio/static/css/main.ea681e64.css.map",
     "main.2e5bf842.js.map": "/P8-Portfolio/static/js/main.2e5bf842.js.map",
     "453.1407b060.chunk.js.map": "/P8-Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a7119a3.css",
+    "static/css/main.ea681e64.css",
     "static/js/main.2e5bf842.js"
   ]
 }
