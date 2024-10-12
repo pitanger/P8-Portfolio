@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/P8-Portfolio/static/css/main.00647bfb.css",
+    "main.js": "/P8-Portfolio/static/js/main.079562d0.js",
+    "static/js/453.1407b060.chunk.js": "/P8-Portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/Projet-5-Kasa.png": "/P8-Portfolio/static/media/Projet-5-Kasa.b43aabad9ec1fc3f5035.png",
+    "static/media/Projet-3-Sophie-Bluel.png": "/P8-Portfolio/static/media/Projet-3-Sophie-Bluel.1757d18e62ac858ea1e2.png",
+    "static/media/Projet-4-Nina-Carducci.png": "/P8-Portfolio/static/media/Projet-4-Nina-Carducci.eca5c0d953a5b73c1fe8.png",
+    "static/media/Projet-6-Vieux-Grimoire.png": "/P8-Portfolio/static/media/Projet-6-Vieux-Grimoire.4f726c016842ecc2e94e.png",
+    "static/media/Projet-2-Booki.png": "/P8-Portfolio/static/media/Projet-2-Booki.5b0e952f72d11fa2572a.png",
+    "static/media/Castle-War-Isle-Island.png": "/P8-Portfolio/static/media/Castle-War-Isle-Island.13ca81e2e370271a60ad.png",
+    "static/media/Projet-7-Qwenta.png": "/P8-Portfolio/static/media/Projet-7-Qwenta.69dfc5fe1d98afe3a655.png",
+    "static/media/Gemstone-Legends.jpg": "/P8-Portfolio/static/media/Gemstone-Legends.681c6676103d42a8df6c.jpg",
+    "static/media/Background.webp": "/P8-Portfolio/static/media/Background.d807881a930fa10013ee.webp",
+    "static/media/Wisper.jpg": "/P8-Portfolio/static/media/Wisper.6180b40f515e3e27e05a.jpg",
+    "static/media/Days-of-Doom.webp": "/P8-Portfolio/static/media/Days-of-Doom.a977d7f16875cdcaad23.webp",
+    "static/media/Contain.jpg": "/P8-Portfolio/static/media/Contain.9bfb132bfc5909f65a0a.jpg",
+    "static/media/The-Invincible.jpg": "/P8-Portfolio/static/media/The-Invincible.9117b0f8e1be82d30c8f.jpg",
+    "static/media/Super-Cat-Tales-Paws.jpg": "/P8-Portfolio/static/media/Super-Cat-Tales-Paws.dc7b959b4ae432c73c5f.jpg",
+    "static/media/linkedin.png": "/P8-Portfolio/static/media/linkedin.6211bd58aa70a4397c42.png",
+    "static/media/Royal-Merge.webp": "/P8-Portfolio/static/media/Royal-Merge.067321fd4ffa6c3652f1.webp",
+    "static/media/github.png": "/P8-Portfolio/static/media/github.fc816db5cff6efebaae5.png",
+    "index.html": "/P8-Portfolio/index.html",
+    "main.00647bfb.css.map": "/P8-Portfolio/static/css/main.00647bfb.css.map",
+    "main.079562d0.js.map": "/P8-Portfolio/static/js/main.079562d0.js.map",
+    "453.1407b060.chunk.js.map": "/P8-Portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00647bfb.css",
+    "static/js/main.079562d0.js"
+  ]
+}
