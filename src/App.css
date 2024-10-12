@@ -120,17 +120,16 @@ main {
     font-weight: 700;
     display: flex;
     transition: background-color 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.Bienvenue > .box > p {
+    margin:0
 }
 
 .box > p {
     padding-left: 4%;
 }
-
-#experience {
-    float: right; /* Place la boîte à droite */
-
-}
-
 
 .portfolio, .competences, .expetdiplomes, .competences__main, .competences__intro {
     display: flex;
@@ -260,6 +259,7 @@ main {
     z-index: 10;
     position: relative;
     box-shadow: none;
+    
 }
 
 .modal-overlay {
@@ -562,6 +562,7 @@ main {
     transition: all 0.6s ease-in-out;
     border-radius: 5px;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
 .collapse-content {

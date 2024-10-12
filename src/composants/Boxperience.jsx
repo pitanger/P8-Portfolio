@@ -45,7 +45,7 @@ function Boxperience({ text, soustexte, Icone, isWhiteText = false, largeurNonEx
     const boxStyle = {
         height: "150px",
         width: isSmallScreen
-            ? isExpanded ? "92%" : "50%"
+            ? isExpanded ? "99%" : "50%"
             : isExpanded 
                 ? `${largeurNonExpanded * 1.86}px`
                 : `${largeurNonExpanded}px`,
@@ -53,6 +53,7 @@ function Boxperience({ text, soustexte, Icone, isWhiteText = false, largeurNonEx
         backgroundColor: "white",
         cursor: "pointer",
         transition: "width 0.5s ease-in-out",
+        overflow: "hidden"
     };
 
     const paragraphStyle = {

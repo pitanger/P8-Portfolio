@@ -49,14 +49,14 @@ const TradCollapse = () => {
       <div className="collapse traduction-collapse" onClick={() => setOpenTraduction(!openTraduction)}>
         <h2>Traduction</h2>
         <div className={`collapse-content ${openTraduction ? 'open' : ''}`}>
-          <div className="project-class-left" style={{ width: '70%' }}>
+          <div className="project-class-left" style={{ width: '80%' }}>
             <p style={{ fontSize: '1.4rem', width:'30%' }}>Nom</p>
             <p style={{ fontSize: '1.3rem', width:'30%' }}>Dev</p>
             <p style={{ fontSize: '1.2rem', width:'40%' }}>Description</p>
           </div>
           {traductionData.map((item) => (
             <div key={item.index} className="project-item">
-              <div className="project-text" style={{ width: '70%' }}>
+              <div className="project-text" style={{ width: '80%' }}>
                 <p style={{ fontSize: '1.2rem', width:'30%' }}>{item.title}</p>
                 <p style={{ fontSize: '1.1rem', width:'30%' }}>{item.developper}</p>
                 <p style={{ fontSize: '1rem', width:'40%' }}>{item.description}</p>
@@ -77,7 +77,7 @@ const TradCollapse = () => {
       <div className="collapse relecture-collapse" onClick={() => setOpenRelecture(!openRelecture)}>
         <h2>Relecture</h2>
         <div className={`collapse-content ${openRelecture ? 'open' : ''}`}>
-          <div className="project-class-right" style={{ width: '70%' }}>
+          <div className="project-class-right" style={{ width: '80%' }}>
             <p style={{ fontSize: '1.4rem', width:'30%' }}>Nom</p>
             <p style={{ fontSize: '1.3rem', width:'30%' }}>Dev</p>
             <p style={{ fontSize: '1.2rem', width:'40%' }}>Description</p>
@@ -92,7 +92,7 @@ const TradCollapse = () => {
                   style={{ cursor: 'pointer' }} 
                 />
               </div>
-              <div className="project-text" style={{ width: '70%' }}>
+              <div className="project-text" style={{ width: '80%' }}>
                 <p style={{ fontSize: '1.2rem', width:'30%' }}>{item.title}</p>
                 <p style={{ fontSize: '1.1rem', width:'30%' }}>{item.developper}</p>
                 <p style={{ fontSize: '1rem', width:'40%' }}>{item.description}</p>

@@ -68,7 +68,7 @@ function Accueil() {
               </div>
             </div>
             <div className="Bienvenue">
-              <Box id="bienvenue-content" soustexte="Bienvenue sur mon Portfolio en ligne" isWhiteText={true} Couleurfond="black" hauteur="80px"/>
+              <Box id="bienvenue-content" soustexte="Bienvenue sur mon Portfolio en ligne" isWhiteText={true} Couleurfond="black" hauteur="90px"/>
             </div>
             <div className="reseaux">
               <div className="reseaux__youtube">

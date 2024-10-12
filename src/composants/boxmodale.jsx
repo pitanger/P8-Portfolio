@@ -55,12 +55,9 @@ function Boxmodale({ text, soustexte, hauteur = "auto", largeur = "auto", Couleu
                 <div className="modal-overlay" onClick={() => setIsCollapsed(false)}>
                     {hoveredProject && (
                         <>
-                            {/* Top box for 'problem' */}
                             <div className="description-projet-top">
                                 <p><strong>{hoveredProject.problem}</strong></p>
                             </div>
-
-                            {/* Bottom box for 'skills' */}
                             <div className="description-projet-bottom">
                                 <p>{hoveredProject.skills}</p>
                             </div>
@@ -78,6 +75,7 @@ function Boxmodale({ text, soustexte, hauteur = "auto", largeur = "auto", Couleu
                                 index={index}
                                 couleur={item.couleur}
                                 onHover={() => setHoveredProject(item)}
+                                onTouchStart={() => setHoveredProject(item)}
                                 onMouseLeave={() => setHoveredProject(null)}
                             />
                         ))}
